@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #F9F9F9;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container > p {
+    font-family: 'Righteous', 'Roboto', sans-serif; 
+}
+
+.logo {
+    height: 30px;
+}
+
+.hero {
+    height: 40vh;
+    position: relative;
+    display: flex;
+    background-color: #b9f1ff;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-items: center;
+    padding: 24px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.hero-text p:first-child {
+    font-size: 2.5rem;
+}
+
+.hero > img {
+    height: 43vh;
+}
+
+.categories-container {
+    margin: 1rem 15px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.section-subtitle {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.category {
+    height: 200px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: contain;
+    position: relative;
+    color: white;
+}
+
+.category > p {
+    z-index: 100;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 8px;
+    opacity: .7;
+    transition: all 0.7s ease-in-out;
+}
+
+.backdrop:hover {
+    opacity: .5;
+}
+
+.category:nth-child(1) {  background-image: url('./../assets/images/tech-bg.jpeg'); }
+.category:nth-child(2) {  background-image: url('./../assets/images/geography-bg.jpeg'); }
+.category:nth-child(3) {  background-image: url('./../assets/images/football-bg.jpeg'); }
+.category:nth-child(4) {  background-image: url('./../assets/images/gk-bg.jpeg'); }
