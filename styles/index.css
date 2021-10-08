@@ -1,34 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
-
-* {
-    font-family: 'ABeeZee', sans-serif;
-}
-
-body {
-    margin: 0;
-    background: #F9F9F9;
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-container > p {
-    font-family: 'Righteous', 'Roboto', sans-serif; 
-}
-
-.logo {
-    height: 30px;
-}
-
 .hero {
     height: 40vh;
     position: relative;
@@ -59,7 +28,7 @@ body {
 
 .section-title {
     font-size: 1.25rem;
-    margin-bottom: 0;
+    margin-bottom: .5rem;
 }
 
 .section-subtitle {
@@ -104,7 +73,11 @@ body {
     opacity: .5;
 }
 
-.category:nth-child(1) {  background-image: url('./../assets/images/tech-bg.jpeg'); }
-.category:nth-child(2) {  background-image: url('./../assets/images/geography-bg.jpeg'); }
-.category:nth-child(3) {  background-image: url('./../assets/images/football-bg.jpeg'); }
-.category:nth-child(4) {  background-image: url('./../assets/images/gk-bg.jpeg'); }
+.categories a:nth-child(1) .category {  background-image: url('./../assets/images/tech-bg.jpeg'); }
+.categories a:nth-child(2) .category {  background-image: url('./../assets/images/geography-bg.jpeg'); }
+.categories a:nth-child(3) .category {  background-image: url('./../assets/images/football-bg.jpeg'); }
+.categories a:nth-child(4) .category {  background-image: url('./../assets/images/gk-bg.jpeg'); }
+
+a {
+    text-decoration: none;
+}

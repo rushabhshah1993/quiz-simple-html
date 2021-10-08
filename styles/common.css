@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #F9F9F9;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container > a > p {
+    font-family: 'Righteous', 'Roboto', sans-serif; 
+}
+
+.logo {
+    height: 30px;
+}
+
+a p {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.category-title {
+    font-size: 2rem;
+}
+
+.content {
+    margin: 0 15px;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.breadcrumbs > p {
+    margin-right: 8px;
+}
+
+.breadcrumbs > p:first-of-type a {
+    color: #17a2b8;
+}
+
+.breadcrumbs > p:last-child {
+    color: #9B9B9B;
+}
